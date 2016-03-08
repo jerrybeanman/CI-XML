@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schedule SYSTEM "timetable.dtd">
+<schedule>
+    <year>2016</year>
+    <term>Winter</term>
+    <set>4S</set>
+    <daysofweek>
+    	<day  = "Monday">
+    		<time>
+    	</day>
+    </daysofweek>
+ </schedule>
