@@ -5,16 +5,135 @@
     <term>Winter</term>
     <set>4O</set>
     <daysofweek>
-    	<day>
-    		<dayname name = "monday">
-    			<timeslot type = "lecture">
-    				<time start = "9:30" end = "11:30">
-    					<course>
-    						<coursenum>4985</coursenum>
-    					</course>
-    				</time>
-    			</timeslots>
-    		</dayname>>	
-    	</day>
-    </daysofweek>
- </schedule>
+        <day>
+            <dayname name = "monday"/>
+            <timeslot type = "lecture">
+                <time start = "9:30" end = "11:30">
+                    <course>
+                        <coursenum>4985</coursenum>
+                    </course>
+                </time>
+            </timeslots>
+        </dayname>>	
+    </day>
+</daysofweek>
+<courses>
+    <course num="COMP4711">
+        <cbooking>
+            <day name="tuesday"/>
+            <time start="13:30" end="14:20"/>
+            <room>SW5-1840</room>
+            <type>Lecture</type>
+            <instructor>Jim Parry</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="tuesday"/>
+            <time start="14:30" end="17:20"/>
+            <room>SE12-321</room>
+            <type>Lab</type>
+            <instructor>Jim Parry</instructor>
+        </cbooking> 
+    </course> <!-- end COMP4711 -->
+    <course num="COMP4985">
+        <cbooking>
+            <day name="monday"/>
+            <time start="9:30" end="11:20"/>
+            <room>SE12-323</room>
+            <type>Lab</type>
+            <instructor>Aman Abdulla</instructor> 
+        </cbooking>
+        <cbooking>
+            <day name="wednesday"/>
+            <time start="9:30" end="11:20"/>
+            <room>SE12-323</room>
+            <type>Lecture</type>
+            <instructor>Aman Abdulla</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="wednesday"/>
+            <time start="11:30" end="13:20"/>
+            <room>SE12-323</room>
+            <type>Lecture</type>
+            <instructor>Aman Abdulla</instructor>
+        </cbooking>
+    </course> <!-- end COMP4985 -->
+    <course num="COMP4981">
+        <cbooking>
+            <day name="tuesday"/>
+            <time start="9:30" end="11:20"/>
+            <room>SE12-323</room>
+            <type>Lab</type>
+            <instructor>Aman Abdulla</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="thursday"/>
+            <time start="9:30" end="11:20"/>
+            <room>SE12-323</room>
+            <type>Lab</type>
+            <instructor>Aman Abdulla</instructor>
+        </cbooking>
+    </course> <!-- end COMP4981 -->
+    <course num="COMP4735">
+        <cbooking>
+            <day name="monday"/>
+            <time start="11:30" end="12:20"/>
+            <room>SW1-1205</room>
+            <type>Lecture</type>
+            <instructor>Mirela Gutica</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="wednesday"/>
+            <time start="13:30" end="14:20"/>
+            <room>SW1-1205</room>
+            <type>Lecture</type>
+            <instructor>Mirela Gutica</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="thursday"/>
+            <time start="11:30" end="12:20"/>
+            <room>SW1-1205</room>
+            <type>Lecture</type>
+            <instructor>Mirela Gutica</instructor>
+        </cbooking>
+    </course> <!-- end COMP4735 -->
+    <course num="COMP4560">
+        <cbooking>
+            <day name="monday"/>
+            <time start="15:30" end="17:20"/>
+            <room>SE12-320</room>
+            <type>Lab</type>
+            <instructor>Brenda Fine</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="tuesday"/>
+            <time start="11:30" end="12:20"/>
+            <room>SW5-1850</room>
+            <type>Lecture</type>
+            <instructor>Brenda Fine</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="friday"/>
+            <time start="12:30" end="13:20"/>
+            <room>SW3-1750</room>
+            <type>Lecture</type>
+            <instructor>Brenda Fine</instructor>
+        </cbooking>
+    </course> <!-- end COMP4560 -->
+    <course num="BLAW3600">
+        <cbooking>
+            <day name="monday"/>
+            <time start="12:30" end="14:20"/>
+            <room>SW9-127</room>
+            <type>Lab</type>
+            <instructor>Catherine Ryan</instructor>
+        </cbooking>
+        <cbooking>
+            <day name="friday"/>
+            <time start="8:30" end="10:20"/>
+            <room>SW5-1840</room>
+            <type>Lecture</type>
+            <instructor>Kevin Wainwright</instructor>
+        </cbooking>
+    </course> <!-- end BLAW3600 -->
+</courses>
+</schedule>
