@@ -1,8 +1,32 @@
-<!DOCTYPE  schedule [
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  schedule (year, term, set, daysofweek, courses, timeslot)[
 	<!ELEMENT year (#PCDATA)> 
 	<!ELEMENT term (#PCDATA)>
 	<!ELEMENT set (#PCDATA)>
-	<!ELEMENT daysofweek (#PCDATA)>
+
+	<!ELEMENT daysofweek (day*)>
+	<!ELEMENT day (dayname, timeslots*)>
+	<!ELEMENT dayname (#PCDATA)>
+	<!ATTLIST dayname
+		name (monday|tuesday|wednesday|thursday|friday) #REQUIRED
+	>
+	<!ELEMENT timeslot (time, course, instructor, location, dayname)>
+	<!ATTLIST timeslot
+		type (lecture|lab) #REQUIRED
+	>
+	<!ELEMENT time (#PCDATA)>
+	<!ATTLIST time
+		start (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30|17:30) #REQUIRED
+		end (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30|17:30) #REQUIRED
+	>
+	<!ELEMENT course (coursenum, coursename)>
+	<!ELEMENT coursenum (#PCDATA)>
+	<!ELEMENT course (#PCDATA)>
+	<!ELEMENT instructor (#PCDATA)>
+
+	<!ELEMENT location (building, room)>
+	<!ELEMENT building (#PCDATA)>
+	<!ELEMENT room	   (#PCDATA)>
+
 	<!ELEMENT courses (#PCDATA)>
-	<!ELEMENT timeslot (#PCDATA)>
 ]>
