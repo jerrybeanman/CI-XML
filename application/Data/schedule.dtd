@@ -30,7 +30,7 @@
 	<!ELEMENT instructor (#PCDATA)>
 
 	<!ELEMENT location (building, room)>
-	<!ELEMENT building (#PCDATA)>
+    <!ELEMENT type (#PCDATA)>
 	<!ELEMENT room	   (#PCDATA)>
 
 ]>
