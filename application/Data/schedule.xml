@@ -3,10 +3,18 @@
 <schedule>
     <year>2016</year>
     <term>Winter</term>
-    <set>4S</set>
+    <set>4O</set>
     <daysofweek>
-    	<day  = "Monday">
-    		<time>
+    	<day>
+    		<dayname name = "monday">
+    			<timeslot type = "lecture">
+    				<time start = "9:30" end = "11:30">
+    					<course>
+    						<coursenum>4985</coursenum>
+    					</course>
+    				</time>
+    			</timeslots>
+    		</dayname>>	
     	</day>
     </daysofweek>
  </schedule>
