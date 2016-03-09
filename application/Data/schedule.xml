@@ -5,16 +5,134 @@
     <term>Winter</term>
     <set>4O</set>
     <daysofweek>
-    	<day>
-    		<dayname name = "monday">
-    			<timeslot type = "lecture">
-    				<time start = "9:30" end = "11:30">
-    					<course>
-    						<coursenum>4985</coursenum>
-    					</course>
-    				</time>
-    			</timeslots>
-    		</dayname>>	
-    	</day>
+    	<day name = "monday">
+    		<dbooking>
+    			<room>SE12-323</room>
+    			<time start = "9:30" end = "11:20"></time>
+    			<course>COMP4985</course>
+    			<instrucctor>Aman Abdulla</instrucctor>
+    			<type>Lab</type>
+    		</dbooking>
+    		<dbooking>
+    			<room>SW1-1205</room>
+    			<time start = "11:30" end = "12:20"></time>
+    			<course>COMP4735</course>
+    			<instrucctor>Mirela Gutica</instrucctor>
+    			<type>Lecture</type>
+    		</dbooking>
+    		<dbooking>
+    			<room>SW9-127</room>
+    			<time start = "12:30" end = "14:20"></time>
+    			<course>BLAW 3600</course>
+    			<instrucctor>Catherine Ryan</instrucctor>
+    			<type>Lab</type>
+    		</dbooking>
+    		<dbooking>
+    			<room>SE12-320</room>
+    			<time start = "15:30" end = "18:20"></time>
+    			<course>COMP4560</course>
+    			<instrucctor>Brenda Fine</instrucctor>
+    			<type>Lab</type>
+    		</dbooking>
+	    </day>
+    	<day name = "tuesday">
+            <dbooking>
+                <room>SE12-323</room>
+                <time start = "9:30" end = "11:20"></time>
+                <course>COMP4981</course>
+                <instrucctor>Aman Abdulla</instrucctor>
+                <type>Lab</type>
+            </dbooking>
+            <dbooking>
+                <room>SW5-1850</room>
+                <time start = "11:30" end = "12:20"></time>
+                <course>COMP4560</course>
+                <instrucctor>Brenda Fine</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SW5-1850</room>
+                <time start = "14:30" end = "15:20"></time>
+                <course>COMP4711</course>
+                <instrucctor>James Parry</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SE32-321</room>
+                <time start = "15:30" end = "18:20"></time>
+                <course>COMP4711</course>
+                <instrucctor>James Parry</instrucctor>
+                <type>Lab</type>
+            </dbooking>
+        </day>
+        <day name = "wednesday">
+            <dbooking>
+                <room>SE12-323</room>
+                <time start = "9:30" end = "11:20"></time>
+                <course>COMP4985</course>
+                <instrucctor>Aman Abdulla</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SE12-323</room>
+                <time start = "11:30" end = "12:20"></time>
+                <course>COMP4985</course>
+                <instrucctor>Aman Abdulla</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SE12-323</room>
+                <time start = "12:30" end = "13:20"></time>
+                <course>COMP4981</course>
+                <instrucctor>Aman Abdulla</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SW1-1205</room>
+                <time start = "13:30" end = "14:20"></time>
+                <course>COMP4735</course>
+                <instrucctor>Mirela Gutica</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+        </day>
+        <day name = "thursday">
+            <dbooking>
+                <room>SE12-323</room>
+                <time start = "9:30" end = "11:20"></time>
+                <course>COMP4981</course>
+                <instrucctor>Aman Abdulla</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SW3-1710</room>
+                <time start = "11:30" end = "12:20"></time>
+                <course>COMP4735</course>
+                <instrucctor>Mirela Gutica</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SE12-322</room>
+                <time start = "15:30" end = "18:20"></time>
+                <course>COMP4981</course>
+                <instrucctor>Linder Mathew</instrucctor>
+                <type>Lab</type>
+            </dbooking>
+        </day>
+        <day name = "friday">
+            <dbooking>
+                <room>SW5-1840</room>
+                <time start = "8:30" end = "10:20"></time>
+                <course>BLAW3600</course>
+                <instrucctor>Kevin Wainwright</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+            <dbooking>
+                <room>SW3-1710</room>
+                <time start = "12:30" end = "13:20"></time>
+                <course>COMP4560</course>
+                <instrucctor>Breanda Fine</instrucctor>
+                <type>Lecture</type>
+            </dbooking>
+        </day>
     </daysofweek>
  </schedule>
