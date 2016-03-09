@@ -1,0 +1,8 @@
+<!DOCTYPE  schedule [
+	<!ELEMENT year (#PCDATA)> 
+	<!ELEMENT term (#PCDATA)>
+	<!ELEMENT set (#PCDATA)>
+	<!ELEMENT daysofweek (#PCDATA)>
+	<!ELEMENT courses (#PCDATA)>
+	<!ELEMENT timeslot (#PCDATA)>
+]>
