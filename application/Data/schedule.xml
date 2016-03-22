@@ -137,7 +137,7 @@
 		</slots>
 		<slots start = "11:30" end = "12:20">
 			<tbooking>
-				<room = "SW1-1205"/>
+				<room>"SW1-1205"/>
 				<day = "monday" />
 				<course num = "COMP4735" />
 				<instructor = "Mirela Gutica" />
@@ -146,7 +146,7 @@
 		</slots>
 		<slots start = "12:30" end = "2:20">
 			<tbooking>
-				<room = "SW9-127"/>
+				<room> "SW9-127"/>
 				<day = "monday" />
 				<course num = "BLAW3600" />
 				<instructor = "Catherine Ryan" />
