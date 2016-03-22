@@ -125,14 +125,14 @@
 		</course> <!-- end BLAW3600 -->
 	</courses>
 	<!-- end courses table -->
-	<timeslot >
+	<timeslots >
 		<slots start = "9:30" end = "11:20">
 			<tbooking>
-				<room = "SE12-323"/>
+				<room>"SE12-323" />
 				<day = "monday" />
-				<course num = "COMP4985" />
+				<course num = "COMP4985" ro/>
 				<instructor = "Aman Abdulla" />
-				<type = "Lab" />	
+				<type = "Lab" />
 			</tbooking>
 		</slots>
 		<slots start = "11:30" end = "12:20">
@@ -288,7 +288,7 @@
 				<type = "Lec" />	
 			</tbooking>
 		</slots>
-	</timeslot>
+	</timeslots>
 	<!-- begin days of week table -->
 	<daysofweek>
 		<day name = "monday">

@@ -1,4 +1,4 @@
-
+<!ELEMENT schedule (year, term, set, daysofweek, timeslots, courses)>
 <!ELEMENT year (#PCDATA)>
 <!ELEMENT term (#PCDATA)>
 <!ELEMENT set (#PCDATA)>
@@ -16,6 +16,10 @@
 
 <!ELEMENT time (#PCDATA)>
 <!ATTLIST time
+	start (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30) #REQUIRED
+	end (9:20|10:20|11:20|12:20|13:20|14:20|15:20|16:20|17:20) #REQUIRED
+>
+<!ATTLIST slots
 	start (8:30|9:30|10:30|11:30|12:30|13:30|14:30|15:30|16:30) #REQUIRED
 	end (9:20|10:20|11:20|12:20|13:20|14:20|15:20|16:20|17:20) #REQUIRED
 >
