@@ -125,170 +125,161 @@
 		</course> <!-- end BLAW3600 -->
 	</courses>
 	<!-- end courses table -->
-	<timeslots >
-		<slots start = "9:30" end = "11:20">
+    <timeslots >
+		<slots start = "9:30" end = "11:20"/>
 			<tbooking>
-				<room>"SE12-323" />
-				<day = "monday" />
-				<course num = "COMP4985" ro/>
-				<instructor = "Aman Abdulla" />
-				<type = "Lab" />
+				<room>SE12-323</room>
+				<day name="monday"/>
+				<course>COMP4985</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "11:30" end = "12:20">
+		<slots start = "11:30" end = "12:20"/>
 			<tbooking>
-				<room = "SW1-1205"/>
-				<day = "monday" />
-				<course num = "COMP4735" />
-				<instructor = "Mirela Gutica" />
-				<type = "Lecture" />	
+				<room>SW1-1205</room>
+				<day name="monday"/>
+				<course>COMP4735</course>
+				<instructor>Mirela Guticaa</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "12:30" end = "2:20">
+		<slots start = "12:30" end = "1:20"/>
 			<tbooking>
-				<room = "SW9-127"/>
-				<day = "monday" />
-				<course num = "BLAW3600" />
-				<instructor = "Catherine Ryan" />
-				<type = "Lecture" />	
+				<room>SE12-307</room>
+				<day name="monday"/>
+				<course>BLAW3600</course>
+				<instructor>Catherine Ryan</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "3:30" end = "5:20">
+		<slots start = "3:30" end = "5:20"/>
 			<tbooking>
-				<room = "SE12-320"/>
-				<day = "monday" />
-				<course num = "COMP4560" />
-				<instructor = "Brenda Fine" />
-				<type = "Lab" />	
+				<room>SE12-320</room>
+				<day name="monday"/>
+				<course>COMP4560</course>
+				<instructor>Brenda Fine</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "9:30" end = "11:20">
+		<slots start = "9:30" end = "11:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "tuesday" />
-				<course num = "COMP4981" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lab" />	
+				<room>SE12-323</room>
+				<day name="tuesday"/>
+				<course>COMP4981</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "9:30" end = "11:20">
+		<slots start = "11:30" end = "12:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "tuesday" />
-				<course num = "COMP4981" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lab" />	
+				<room>SW5-323</room>
+				<day name="tuesday"/>
+				<course>COMP4560</course>
+				<instructor>Brenda Fine</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "11:30" end = "12:20">
+		<slots start = "2:30" end = "3:20"/>
 			<tbooking>
-				<room = "SW5-1850"/>
-				<day = "tuesday" />
-				<course num = "COMP4560" />
-				<instructor = "Brenda Fine" />
-				<type = "Lec" />	
+				<room>SW5-1840</room>
+				<day name="tuesday"/>
+				<course>COMP4711</course>
+				<instructor>James Parry</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "2:30" end = "3:20">
+		<slots start = "3:30" end = "5:20"/>
 			<tbooking>
-				<room = "SW5-1840"/>
-				<day = "tuesday" />
-				<course num = "COMP4711" />
-				<instructor = "James Perry" />
-				<type = "Lec" />	
+				<room>SE12-321</room>
+				<day name="tuesday"/>
+				<course>COMP4711</course>
+				<instructor>James Parry</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "3:30" end = "5:20">
+		<slots start = "9:30" end = "11:20"/>
 			<tbooking>
-				<room = "SE12-321"/>
-				<day = "tuesday" />
-				<course num = "COMP4711" />
-				<instructor = "James Perry" />
-				<type = "Lab" />	
+				<room>SE12-323</room>
+				<day name="wednesday"/>
+				<course>COMP4985</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "9:30" end = "11:20">
+		<slots start = "11:30" end = "1:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "wednesday" />
-				<course num = "COMP4985" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lec" />	
+				<room>SE12-323</room>
+				<day name="wednesday"/>
+				<course>COMP4985</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "11:30" end = "12:20">
+		<slots start = "12:30" end = "12:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "wednesday" />
-				<course num = "COMP4985" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lec" />	
+				<room>SE12-323</room>
+				<day name="wednesday"/>
+				<course>COMP4981</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "12:30" end = "1:20">
+		<slots start = "1:30" end = "2:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "wednesday" />
-				<course num = "COMP4981" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lec" />	
+				<room>SW1-1205</room>
+				<day name="wednesday"/>
+				<course>COMP4735</course>
+				<instructor>Mirela Guticaa</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "1:30" end = "2:20">
+		<slots start = "9:30" end = "11:20"/>
 			<tbooking>
-				<room = "SW1-1205"/>
-				<day = "wednesday" />
-				<course num = "COMP4735" />
-				<instructor = "Mirela Gutica" />
-				<type = "Lec" />	
+				<room>SE12-323</room>
+				<day name="thursday"/>
+				<course>COMP4981</course>
+				<instructor>Aman Abdulla</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "9:30" end = "11:20">
+		<slots start = "11:30" end = "12:20"/>
 			<tbooking>
-				<room = "SE12-323"/>
-				<day = "thursday" />
-				<course num = "COMP4981" />
-				<instructor = "Aman Abdulla" />
-				<type = "Lec" />	
+				<room>SW3-1710</room>
+				<day name="thursday"/>
+				<course>COMP4735</course>
+				<instructor>Mirela Guticaa</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "11:30" end = "12:20">
+		<slots start = "3:30" end = "5:20"/>
 			<tbooking>
-				<room = "SW3-1710"/>
-				<day = "thursday" />
-				<course num = "COMP4735" />
-				<instructor = "Mirela Gutica" />
-				<type = "Lec" />	
+				<room>SE12-322</room>
+				<day name="thursday"/>
+				<course>COMP4735</course>
+				<instructor>Matthew Linder</instructor>
+				<type>Lab</type>
 			</tbooking>
 		</slots>
-		<slots start = "3:30" end = "5:20">
+		<slots start = "8:30" end = "10:20"/>
 			<tbooking>
-				<room = "SE12-322"/>
-				<day = "thursday" />
-				<course num = "COMP4735" />
-				<instructor = "Matthew Linder" />
-				<type = "Lab" />	
+				<room>SW5-1850</room>
+				<day name="friday"/>
+				<course>BLAW3600</course>
+				<instructor>Catherine Ryan</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "8:30" end = "10:20">
+		<slots start = "12:30" end = "1:20"/>
 			<tbooking>
-				<room = "SW5-1840"/>
-				<day = "friday" />
-				<course num = "BLAW3600" />
-				<instructor = "Kevin Wainright" />
-				<type = "Lec" />	
+				<room>SW1-1021</room>
+				<day name="friday"/>
+				<course>COMP4560</course>
+				<instructor>Brenda Fine</instructor>
+				<type>Lecture</type>
 			</tbooking>
 		</slots>
-		<slots start = "12:30" end = "1:20">
-			<tbooking>
-				<room = "SW3-1750"/>
-				<day = "friday" />
-				<course num = "COMP4560" />
-				<instructor = "Brenda Fine" />
-				<type = "Lec" />	
-			</tbooking>
-		</slots>
-	</timeslots>
+	<!-- begin days of week table -->
 	<!-- begin days of week table -->
 	<daysofweek>
 		<day name = "monday">
