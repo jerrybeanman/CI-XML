@@ -7,18 +7,19 @@ class Schedule extends CI_Model {
 	protected $courses = null;
 	protected $timeslots = null;
 	
-	public function _construct() {
-		parent::_construct();
-		$this->xml = simplexml_load_file(DATAPATH, 'schedule.xml');
+	public function __construct() {
+		parent::__construct();
+
+		$this->xml = simplexml_load_file(DATAPATH . 'schedule.xml');
 		
 		// create arrays for each propert
-		$days = array();
-		$courses = array();
-		$timeslots = array();
-	//Days perspective
-        foreach($this->xml->days->dayoftheweek as $day) {
-//           $this->xml->days->dayoftheweek[(string)'day'] = $day;
-            foreach($day->booking as $b) {
+		$this->days = array();
+		$this->courses = array();
+		$this->timeslots = array();
+		$daysoftheweek = array();
+		//Days perspective
+		foreach($this->xml->daysofweek as $day) {
+            foreach($day->day->dbooking as $b) {
                 $booking = array();
                 $booking['day'] = (string) $day['day'];
                 $booking['type'] = (string) $b['type'];
@@ -27,39 +28,39 @@ class Schedule extends CI_Model {
                 $booking['instructor'] = (string) $b->instructor;
                 $booking['building'] = (string) $b->building;
                 $booking['room'] = (string) $b->room;
-                $this->daysoftheweek[] = new Booking($booking);
+                $this->days[] = new Booking($booking);
              }
             }	
 		
-		foreach($this->xml->courses->course as $course)
+		foreach($this->xml->courses as $course)
 		{
 			$courseBookings = array();
-			foreach($course->cbooking as $c)
+			foreach($course->course->cbooking as $c)
 			{
 				$booking = new Booking();
-				$booking['course'] = (string) $course['num'];
-				$booking['day'] = $c['day'];
-				$booking['time'] = $c['time'];
-				$booking['room'] = $c['room'];
-				$booking['type'] = $c['type'];
-				$booking['instructor'] = $c['instructor'];
+				$booking->course = (string) $course['num'];
+				$booking->day = $c['day'];
+				$booking->time = $c['time'];
+				$booking->room = $c['room'];
+				$booking->type = $c['type'];
+				$booking->instructor = $c['instructor'];
 				array_push($courseBookings, $booking);
 			}
 			$this->courses[(string) $course['num']] = $course;
 		}
 		
-		foreach($this->xml->timeslots->slots as $slot)
+		foreach($this->xml->timeslots as $slot)
 		{
 			$timeBookings = array();
-			foreach($slot->tbooking as $t)
+			foreach($slot->slots->tbooking as $t)
 			{
 				$booking = new Booking();
-				$booking['course'] = $t['num'];
-				$booking['day'] = $t['day'];
-				$booking['time'] = $slot['start'];
-				$booking['room'] = $t['room'];
-				$booking['type'] = $t['type'];
-				$booking['instructor'] = $t['instructor'];
+				$booking->course = $t['num'];
+				$booking->day = $t['day'];
+				$booking->time = $slot['time'];
+				$booking->room = $t['room'];
+				$booking->type = $t['type'];
+				$booking->instructor = $t['instructor'];
 				array_push($timeBookings, $booking);
 			}
 		}
