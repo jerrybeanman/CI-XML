@@ -26,7 +26,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 		$result = '';
-		foreach($this->Schedule->getDaysOfWeek() as $row){
+		foreach($this->Schedule->getDaysOfWeek() as $row)
+		{
 			$result .= $this->parser->parse('booking_row', (array) $row, true);
 		}
 		$result = $this->parser->parse('booking_table', array('rows'=> $result), true);
