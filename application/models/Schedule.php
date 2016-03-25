@@ -1,9 +1,9 @@
 <?php
 
-class Schedule extend CI_Model {
+class Schedule extends CI_Model {
 	
 	protected $xml = null;
-	protected $days = null;
+	protected $days = array();
 	protected $courses = null;
 	protected $timeslots = null;
 	
@@ -15,22 +15,21 @@ class Schedule extend CI_Model {
 		$days = array();
 		$courses = array();
 		$timeslots = array();
-		
-		foreach($this->xml->daysofweek->day as $day) {
-			$dayBookings = array();
-			foreach($day->dbooking as $d)
-			{
-				$booking = new Booking();
-				$booking['day'] = (string) $day['name'];
-				$booking['time'] = $b['time'];
-				$booking['room'] = $b['room'];
-				$booking['type'] = $b['type'];
-				$booking['instructor'] = $b['instructor'];
-				$booking['course'] = $b['course'];
-				array_push($dayBookings, $booking);
-			}
-			$this->days[(string) $day['name']] = $day;
-		}
+	//Days perspective
+        foreach($this->xml->days->dayoftheweek as $day) {
+//           $this->xml->days->dayoftheweek[(string)'day'] = $day;
+            foreach($day->booking as $b) {
+                $booking = array();
+                $booking['day'] = (string) $day['day'];
+                $booking['type'] = (string) $b['type'];
+                $booking['time'] = (string) $b->time;
+                $booking['class'] = (string) $b->class;
+                $booking['instructor'] = (string) $b->instructor;
+                $booking['building'] = (string) $b->building;
+                $booking['room'] = (string) $b->room;
+                $this->daysoftheweek[] = new Booking($booking);
+             }
+            }	
 		
 		foreach($this->xml->courses->course as $course)
 		{
