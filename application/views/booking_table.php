@@ -2,7 +2,6 @@
 <table class="table table-bordered">
     <tr>
         <th>Type</th>
-        <th>Building</th>
         <th>Room</th>
         <th>Instructor</th>
         <th>Time</th>

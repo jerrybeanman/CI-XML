@@ -69,6 +69,7 @@ class Schedule extends CI_Model {
 	
 	function getDaysOfWeek()
 	{
+		print_r($this->days);
 		return $this->days;
 	}
 	
