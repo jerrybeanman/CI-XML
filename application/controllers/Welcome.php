@@ -24,11 +24,34 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		//$this->load->view('welcome_message');
+		/*
+		Note, searching not implemented so displaying all tables
+		as proof of concept.
+		*/
 		$result = '';
+		// display all bookings by days of week
 		foreach($this->Schedule->getDaysOfWeek() as $row)
 		{ 
-			$result .= $this->parser->parse('booking_row', (array) $row, true);
+			foreach ($row as $booking)
+			{
+				$result .= $this->parser->parse('booking_row', $booking, true);
+			}
+		}
+		// display all  bookings by course number
+		foreach($this->Schedule->getCourses() as $row)
+		{ 
+			foreach ($row as $booking)
+			{
+				$result .= $this->parser->parse('booking_row', $booking, true);
+			}
+		}
+		// display all bookings by timeslot
+		foreach($this->Schedule->getTimeslots() as $row)
+		{ 
+			foreach ($row as $booking)
+			{
+				$result .= $this->parser->parse('booking_row', $booking, true);
+			}
 		}
 		$result = $this->parser->parse('booking_table', array('rows'=> $result), true);
 		$this->parser->parse('template', array('content' => $result, 'page_title' => 'Schedule'));

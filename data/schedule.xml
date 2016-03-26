@@ -24,7 +24,7 @@
 			<dbooking>
 				<room>SW9-127</room>
 				<time start = "12:30" end = "14:20"></time>
-				<course num = "BLAW 360"/>
+				<course num = "BLAW3600"/>
 				<instructor>Catherine Ryan</instructor>
 				<type>Lab</type>
 			</dbooking>

@@ -18,13 +18,15 @@ class Schedule extends CI_Model {
 		$this->timeslots = array();
 		$daysoftheweek = array();
 		//Days perspective
-		foreach($this->xml->daysofweek as $day) {
+		foreach($this->xml->daysofweek->day as $day) {
 			$dayBooking = array();
-            foreach($day->day->dbooking as $b) {
+            foreach($day->dbooking as $b) {
                 $booking = new Booking();
-				$booking->course = $b->course;
-				$booking->day = $day->day['name'];
-				$booking->time = $b->time;
+				$booking->course = $b->course->attributes()['num'];
+				$booking->day = $day['name'];
+				$booking->time = $b->time->attributes()['start'];
+				$booking->time .= " - ";
+				$booking->time .= $b->time->attributes()['end'];
 				$booking->room = $b->room;
 				$booking->type = $b->type;
 				$booking->instructor = $b->instructor;
@@ -33,45 +35,47 @@ class Schedule extends CI_Model {
 			 array_push($this->days, $dayBooking);
             }	
 		
-		foreach($this->xml->courses as $course)
+		foreach($this->xml->courses->course as $course)
 		{
 			$courseBookings = array();
-			foreach($course->course->cbooking as $c)
+			foreach($course->cbooking as $c)
 			{
 				$booking = new Booking();
-				$booking->course = (string) $course['num'];
-				$booking->day = $c->day;
-				$booking->time = $c->time;
+				$booking->course = $course->attributes()['num'];
+				$booking->day = $c->day['name'];
+				$booking->time = $c->time->attributes()['start'];
+				$booking->time .= " - ";
+				$booking->time .= $c->time->attributes()['end'];
 				$booking->room = $c->room;
 				$booking->type = $c->type;
 				$booking->instructor = $c->instructor;
 				array_push($courseBookings, $booking);
 			}
 			array_push($this->courses, $courseBookings);
-			print_r($this->courses);
 		}
 		
-		foreach($this->xml->timeslots as $slot)
+		foreach($this->xml->timeslots->slots as $slot)
 		{
 			$timeBookings = array();
-			foreach($slot->slots->tbooking as $t)
+			foreach($slot->tbooking as $t)
 			{
 				$booking = new Booking();
-				$booking->course = $t['num'];
-				$booking->day = $t['day'];
-				$booking->time = $slot['time'];
-				$booking->room = $t['room'];
-				$booking->type = $t['type'];
-				$booking->instructor = $t['instructor'];
+				$booking->course = $t->course->attributes()['num'];
+				$booking->day = $t->day->attributes()['name'];
+				$booking->time = $slot->time->attributes()['start'];
+				$booking->time .= " - ";
+				$booking->time .= $slot->time->attributes()['end'];
+				$booking->room = $t->room;
+				$booking->type = $t->type;
+				$booking->instructor = $t->instructor;
 				array_push($timeBookings, $booking);
 			}
+			array_push($this->timeslots, $timeBookings);
 		}
-		$this->timeslots[(string) $slot['start']] = $slot;
 	}
 	
 	function getDaysOfWeek()
 	{
-		print_r($this->days);
 		return $this->days;
 	}
 	
